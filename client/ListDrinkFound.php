@@ -5,6 +5,14 @@ if(isset($_GET["name"]))
     $url = "https://drinkfinder.herokuapp.com/ws/GetDrink.php?name=".$_GET["name"];
    
     
+    $pagina = file_get_contents($url);
+		
+		// json_decode interpreta il file json
+		// gli passo come parametri la pagina (in formato json) e il valore booleano true
+		// che sta ad indicare che l'oggetto restituito sarà convertito in un array associativo
+		// assegno alla variabile json_output il risultato della funzione
+		$data = json_decode($pagina,true);
+    
 }
 ?>
 <br>
@@ -20,11 +28,11 @@ if(isset($_GET["name"]))
         $i < count($data["title"]); 
         $i++) 
         {
-            echo "Title: ".$data["title"][$i];
+            echo "Drink: ".$data["drinks"][$i];
             echo "<br>";
 
-            if(isset($data["imageLinks"][$i]["thumbnail"]) && $data["imageLinks"][$i]["thumbnail"] != "ND")
-                echo "<img src=".$data["imageLinks"][$i]["thumbnail"]."/>";
+            if(isset($data["drinkImage"][$i]) && $data["imageLinks"][$i] != "null")
+                echo "<img src=".$data["drinkImage"][$i]."/>";
             else
                 echo "<img src= .\bookimgnotfound.jpg>";
             echo "<br>";

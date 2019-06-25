@@ -39,7 +39,6 @@ if(isset($_GET['name']))
     	deliver_response(400,"Rischiesta non valida",NULL);
     }
     
-    //Prova
 }
 
 // funzione per estrarre le informazioni. le informazioni che verranno visualizzate sono:
@@ -55,8 +54,8 @@ function get_drinks($output)
 	//$img = $output["drinks"][0]['strDrinkThumb'];
 	//echo "<img src=\"$img\" width=\"$width\" height=\"$height\"><br><br>";
 	
-	$info = array('strDrink' => [],
-		'strDrinkThumb' =>[],
+	$info = array('drinkName' => [],
+		'drinkImage' =>[],
 					'strCategory' => [],
 					'strAlcoholic' => [],
 					'strGlass' => [],
@@ -80,18 +79,18 @@ function get_drinks($output)
 		// se strDrink di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strDrink"]))
 			// assegno il suo valore all'array strDrink
-			$info['strDrink'][$i] = $output["drinks"][$i]["strDrink"];
+			$info['drinkName'][$i] = $output["drinks"][$i]["strDrink"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strDrink'][$i] = "null";
+			$info['drinkName'][$i] = "null";
 			
 			// se strDrink di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strDrinkThumb"]))
 			// assegno il suo valore all'array strDrink
-			$info['strDrinkThumb'][$i] = $output["drinks"][$i]["strDrinkThumb"];
+			$info['drinkImage'][$i] = $output["drinks"][$i]["strDrinkThumb"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strDrinkThumb'][$i] = "null";
+			$info['drinkImage'][$i] = "null";
 
 		// se strCategory di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strCategory"]))
