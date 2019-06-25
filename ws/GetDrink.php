@@ -56,18 +56,18 @@ function get_drinks($output)
 	
 	$info = array('drinkName' => [],
 		'drinkImage' =>[],
-					'strCategory' => [],
-					'strAlcoholic' => [],
-					'strGlass' => [],
-					'strInstructions' => [],
-					'strIngredient1' => [],
-					'strIngredient2' => [],
-					'strIngredient3' => [],
-					'strIngredient4' => [],
-					'strMeasure1' =>  [],
-					'strMeasure2' =>  [],
-					'strMeasure3' =>  [],
-					'strMeasure4' =>  []
+					'drinkCategory' => [],
+					'drinkAlcoholic' => [],
+					'drinkGlass' => [],
+					'drinkInstructions' => [],
+					'drinkIngredient1' => [],
+					'drinkIngredient2' => [],
+					'drinkIngredient3' => [],
+					'drinkIngredient4' => [],
+					'drinkMeasure1' =>  [],
+					'drinkMeasure2' =>  [],
+					'drinkMeasure3' =>  [],
+					'drinkMeasure4' =>  []
 					);
 	
 	for ($i = 0; 
@@ -95,98 +95,98 @@ function get_drinks($output)
 		// se strCategory di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strCategory"]))
 			// assegno il suo valore all'array strCategory
-			$info['strCategory'][$i] = $output["drinks"][$i]["strCategory"];
+			$info['drinkCategory'][$i] = $output["drinks"][$i]["strCategory"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strCategory'][$i] = "null";
+			$info['drinkCategory'][$i] = "null";
 			
 		// se strAlcoholic di drinks[i] è presente		
 		if(!empty($output["drinks"][$i]["strAlcoholic"]))
 			// assegno il suo valore/i suoi valori all'array strAlcoholic
-			$info['strAlcoholic'][$i] = $output["drinks"][$i]["strAlcoholic"];
+			$info['drinkAlcoholic'][$i] = $output["drinks"][$i]["strAlcoholic"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strAlcoholic'][$i] = "null";	
+			$info['drinkAlcoholic'][$i] = "null";	
 			
 		// se strGlass di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strGlass"]))
 			// assegno il suo valore/i suoi valori all'array strGlass
-			$info['strGlass'][$i] = $output["drinks"][$i]["strGlass"];
+			$info['drinkGlass'][$i] = $output["drinks"][$i]["strGlass"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strGlass'][$i] = "null";	
+			$info['drinkGlass'][$i] = "null";	
 			
 		// se strInstructions di drinks[i] è presente
 		if(!empty($output["drinks"][$i]["strInstructions"]))
 			// assegno il suo valore all'array strInstructions
-			$info['strInstructions'][$i] = $output["drinks"][$i]["strInstructions"];
+			$info['drinkInstructions'][$i] = $output["drinks"][$i]["strInstructions"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strInstructions'][$i] = "null";
+			$info['drinkInstructions'][$i] = "null";
 			
 		// se nome strIngredient1 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strIngredient1"]))
 			// assegno il suo valore/i suoi valori all'array strIngredient1
-			$info['strIngredient1'][$i] = $output["drinks"][$i]["strIngredient1"];
+			$info['drinkIngredient1'][$i] = $output["drinks"][$i]["strIngredient1"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strIngredient1'][$i] = "null";
+			$info['drinkIngredient1'][$i] = "null";
 			
 		// se nome strIngredient2 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strIngredient2"]))
 			// assegno il suo valore/i suoi valori all'array strIngredient2
-			$info['strIngredient2'][$i] = $output["drinks"][$i]["strIngredient2"];
+			$info['drinkIngredient2'][$i] = $output["drinks"][$i]["strIngredient2"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strIngredient2'][$i] = "null";
+			$info['drinkIngredient2'][$i] = "null";
 			
 		// se nome strIngredient3 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strIngredient3"]))
 			// assegno il suo valore/i suoi valori all'array strIngredient3
-			$info['strIngredient3'][$i] = $output["drinks"][$i]["strIngredient3"];
+			$info['drinkIngredient3'][$i] = $output["drinks"][$i]["strIngredient3"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strIngredient3'][$i] = "null";
+			$info['drinkIngredient3'][$i] = "null";
 			
 		// se nome strIngredient4 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strIngredient4"]))
 			// assegno il suo valore/i suoi valori all'array strIngredient4
-			$info['strIngredient4'][$i] = $output["drinks"][$i]["strIngredient4"];
+			$info['drinkIngredient4'][$i] = $output["drinks"][$i]["strIngredient4"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strIngredient4'][$i] = "null";
+			$info['drinkIngredient4'][$i] = "null";
 			
 		// se nome strMeasure1 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strMeasure1"]))
 			// assegno il suo valore/i suoi valori all'array strMeasure1
-			$info['strMeasure1'][$i] = $output["drinks"][$i]["strMeasure1"];
+			$info['drinkMeasure1'][$i] = $output["drinks"][$i]["strMeasure1"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strMeasure1'][$i] = "null";
+			$info['drinkMeasure1'][$i] = "null";
 			
 		// se nome strMeasure2 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strMeasure2"]))
 			// assegno il suo valore/i suoi valori all'array strMeasure2
-			$info['strMeasure2'][$i] = $output["drinks"][$i]["strMeasure2"];
+			$info['drinkMeasure2'][$i] = $output["drinks"][$i]["strMeasure2"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strMeasure2'][$i] = "null";
+			$info['drinkMeasure2'][$i] = "null";
 			
 		// se nome strMeasure3 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strMeasure3"]))
 			// assegno il suo valore/i suoi valori all'array strMeasure3
-			$info['strMeasure3'][$i] = $output["drinks"][$i]["strMeasure3"];
+			$info['drinkMeasure3'][$i] = $output["drinks"][$i]["strMeasure3"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strMeasure3'][$i] = "null";
+			$info['drinkMeasure3'][$i] = "null";
 			
 		// se nome strMeasure4 di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strMeasure4"]))
 			// assegno il suo valore/i suoi valori all'array strMeasure4
-			$info['strMeasure4'][$i] = $output["drinks"][$i]["strMeasure4"];
+			$info['drinkMeasure4'][$i] = $output["drinks"][$i]["strMeasure4"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['strMeasure4'][$i] = "null";
+			$info['drinkMeasure4'][$i] = "null";
 			
 	}
 		// ritorno l'array info
