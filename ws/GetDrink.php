@@ -38,6 +38,8 @@ if(isset($_GET['name']))
     	// errore richiesta : codice di stato -> 400
     	deliver_response(400,"Rischiesta non valida",NULL);
     }
+    
+    //Prova
 }
 
 // funzione per estrarre le informazioni. le informazioni che verranno visualizzate sono:
