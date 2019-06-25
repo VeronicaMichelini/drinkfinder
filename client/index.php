@@ -8,7 +8,7 @@
 
 <img src='https://i.gifer.com/5p1E.gif' height="65" width="65"><br><br>
 
-<form action="ListDrinkFounded.php" method="GET">
+<form action="ListDrinkFound.php" method="GET">
 
 	Nome cocktail:<br><input type="text" name="name"><br>
 	<input type="submit" value="Cerca">
