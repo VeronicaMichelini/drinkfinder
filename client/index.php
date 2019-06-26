@@ -14,13 +14,18 @@
 	<input type="submit" value="Cerca">
 	
 </form>
-
+<br><br>
 <form action="ListIngredientFound.php" method="GET">
 
 	Nome ingrediente:<br><input type="text" name="name"><br>
 	<input type="submit" value="Cerca">
 	
 </form>
+<br><br>
+<form action="ListRandomFound.php" method="POST">
 
+	<input type="submit" value="Ricerca random" name="random">
+	
+</form>
 
 </html>
