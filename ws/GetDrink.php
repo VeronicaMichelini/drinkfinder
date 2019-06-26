@@ -24,12 +24,12 @@ if(isset($_GET['name']))
 		
 		if($data["drinks"] == null || count($data["drinks"]) == 0 )
 		{
-			// non trovato : codice di stato -> 404
+			// non trovato : codice di stato -> 204
 			deliver_response(204,"Assente",NULL);
 		}else
 		{	
 			// richiamo alla funzione get_info
-		$info = get_drinks($data);
+			$info = get_drinks($data);
 			// trovato : codice di stato -> 200
 			deliver_response(200,"Presente",$info);
 		}
