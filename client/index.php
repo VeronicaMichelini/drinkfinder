@@ -22,10 +22,5 @@
 	
 </form>
 <br><br>
-<form action="ListRandomFound.php" method="POST">
-
-	<input type="submit" value="Ricerca random" name="random">
-	
-</form>
 
 </html>
