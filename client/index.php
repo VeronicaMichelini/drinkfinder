@@ -15,4 +15,12 @@
 	
 </form>
 
+<form action="ListIngredientFound.php" method="GET">
+
+	Nome ingrediente:<br><input type="text" name="name"><br>
+	<input type="submit" value="Cerca">
+	
+</form>
+
+
 </html>

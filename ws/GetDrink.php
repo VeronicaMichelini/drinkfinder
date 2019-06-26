@@ -55,7 +55,7 @@ function get_drinks($output)
 	//echo "<img src=\"$img\" width=\"$width\" height=\"$height\"><br><br>";
 	
 	$info = array('drinkName' => [],
-		'drinkImage' =>[],
+					'drinkImage' =>[],
 					'drinkCategory' => [],
 					'drinkAlcoholic' => [],
 					'drinkGlass' => [],
