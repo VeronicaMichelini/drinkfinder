@@ -14,7 +14,7 @@
 	<input type="submit" value="Cerca">
 	
 </form>
-<br><br>
+<br>
 <form action="ListIngredientFound.php" method="GET">
 
 	Nome ingrediente:<br><input type="text" name="name"><br>
