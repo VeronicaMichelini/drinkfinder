@@ -47,8 +47,8 @@ if(isset($_GET['name']))
 // le informazioni che verranno visualizzate sono: nome e immagine
 function get_drinks($output)
 {
-	$info = array('drinkName' => [],
-					'drinkImage' =>[]
+	$info = array('ingredientName' => [],
+					'ingredientImage' =>[]
 					);
 	
 	for ($i = 0; 
@@ -58,19 +58,19 @@ function get_drinks($output)
 
 		// se strDrink di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strDrink"]))
-			// assegno il suo valore all'array strDrink
-			$info['drinkName'][$i] = $output["drinks"][$i]["strDrink"];
+			// assegno il suo valore all'array ingredientName
+			$info['ingredientName'][$i] = $output["drinks"][$i]["strDrink"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['drinkName'][$i] = "null";
+			$info['ingredientName'][$i] = "null";
 			
-			// se strDrink di drinks[i] è presente	
+			// se strDrinkThumb di drinks[i] è presente	
 		if(!empty($output["drinks"][$i]["strDrinkThumb"]))
-			// assegno il suo valore all'array strDrink
-			$info['drinkImage'][$i] = $output["drinks"][$i]["strDrinkThumb"];
+			// assegno il suo valore all'array ingredientImage
+			$info['ingredientImage'][$i] = $output["drinks"][$i]["strDrinkThumb"];
 		else
 			// altrimenti gli assegno la stringa null
-			$info['drinkImage'][$i] = "null";
+			$info['ingredientImage'][$i] = "null";
 	}
 	// ritorno l'array info
 	return($info);		
