@@ -1,6 +1,6 @@
 <?php
 // il messaggio indicherà se la richiesta è valida oppure no
-// e se la risposta è stata trovata oppure no
+// e allo stesso modose la risposta è stata trovata oppure no
 function deliver_response($status,
 							$status_message,
 							$data)
@@ -20,19 +20,17 @@ function deliver_response($status,
 	echo $json_response;
 }
 
-function getData($url)
-{
+function getData($url){
 	// assegno alla variabile pagina il risultato della funzione file_get_content
-	// legge tutto il file in una stringa
-	// cioè il risultato della ricerca tramite l'url
-	$pagina = file_get_contents($url);
+		// legge tutto il file in una stringa
+		// cioè il risultato della ricerca tramite l'url
+		$pagina = file_get_contents($url);
 		
-	// json_decode interpreta il file json
-	// gli passo come parametri la pagina (in formato json) e il valore booleano true
-	// che sta ad indicare che l'oggetto restituito sarà convertito in un array associativo
-	// assegno alla variabile json_output il risultato della funzione
-	$output = json_decode($pagina,true);
-	
-	return $output;
+		// json_decode interpreta il file json
+		// gli passo come parametri la pagina (in formato json) e il valore booleano true
+		// che sta ad indicare che l'oggetto restituito sarà convertito in un array associativo
+		// assegno alla variabile json_output il risultato della funzione
+		$output = json_decode($pagina,true);
+		return $output;
 }
 ?>

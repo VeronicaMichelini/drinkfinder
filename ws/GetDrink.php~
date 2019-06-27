@@ -19,7 +19,7 @@ if(isset($_GET['name']))
     	// se il drink è composto da due nomi questi vengono uniti con il + nel mezzo
 		$stringa_decodificata = urlencode($name);
 		
-		// accodo il nome del cocktail inseriro all'url
+		// accodo il nome del cocktail inseriro all''url
 		$url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='.$stringa_decodificata;
 		
 		// richiamo la funzione getData
