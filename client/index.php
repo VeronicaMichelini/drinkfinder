@@ -2,7 +2,7 @@
 
 <body background = 'https://static.vecteezy.com/system/resources/previews/000/401/351/non_2x/vector-background-wallpaper-with-polygons-in-gradient-colors.jpg';
 
-<title><center><big>Ricerca informazioni cocktail tramite nome</big></center></title><br>
+<title><center><big>Ricerca cocktail tramite nome oppure ingrediente</big></center></title><br>
 
 <marquee>Progetto PIATTAFORME DIGITALI PER LA GESTIONE DEL TERRITORIO.  Michelini Veronica</marquee><br><br>
 
