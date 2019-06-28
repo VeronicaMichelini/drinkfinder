@@ -9,9 +9,9 @@ function deliver_response($status,
 
 	// le variabili dell'argomento devono essere formattate in JSON
 	// le memorizzo quindi in un array response in formato JSON
-	$response['status']=$status;
-	$response['status_message']=$status_message;
-	$response['data']=$data;
+	$response['status'] = $status;
+	$response['status_message'] = $status_message;
+	$response['data'] = $data;
 	
 	// codifica dell'array response in formato JSON
 	$json_response = json_encode($response);
