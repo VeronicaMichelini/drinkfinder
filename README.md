@@ -37,9 +37,9 @@ Contiene poi la funzione get_drinks che ha come parametro il risultato completo 
 /*Quando si inserisce il nome nel campo del cocktail o dell'ingrediente la richiesta alla API viene effettuata dalla funzioni getData che si trova all'interno del file getData.php, i rusultati vengono poi selezionati dalla funzione get_drinks che si trova all'interno del file getDrink.php e stampati da ListDrinkFound.php*/
 # Documentazione API
 * GetDrink.php : URL -> https://drinkfinder.herokuapp.com/ws/GetDrink.php?name=
-acquisisce attraverso il metodo GET il nome che l'utente vuole cercare.
+,acquisisce attraverso il metodo GET il nome che l'utente vuole cercare.
 * GetIngredient : URL -> https://drinkfinder.herokuapp.com/ws/GetIngredient.php?name=
-acquisisce attraverso il metodo GET l'ingrediente che l'utente vuole cercare.
+,acquisisce attraverso il metodo GET l'ingrediente che l'utente vuole cercare.
 Esempi:
 ### Caso primo: ricerca cocktail tramite nome (margarita)
 URL : https://drinkfinder.herokuapp.com/ws/GetDrink.php?name=margarita.
