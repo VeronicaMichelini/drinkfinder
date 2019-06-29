@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     $stmt->store_result(); 
     if($stmt->fetch()) //fetching the contents of the row { 
       $_SESSION['login_user'] = $username; // Initializing Session 
-    header("location: actionSelect.php"); // Redirecting To Profile Page 
+    header("Location: actionSelect.php"); // Redirecting To Profile Page 
   } 
   mysqli_close($conn); // Closing Connection 
 } 
