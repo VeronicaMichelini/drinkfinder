@@ -8,12 +8,11 @@
 </head>
 
 <body>
-<h2>Pagina di accesso</h2>
-<form method="post" action="reg.php" >
-	<input type="submit" value="Registrati"><br><br>
-</form>
-<form method="post" action="access.php" >
-	<input type="submit" value="Login">
+<h2>Nuova registrazione</h2>
+<form method="post" action="connect.php">
+	Username : <br><input type="text" name="username"><br><br>
+	Password : <br><input type="password" name="password"><br><br>
+	<input type="submit" value="Registrati">
 </form>
 
 </body>
