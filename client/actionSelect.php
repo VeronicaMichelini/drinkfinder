@@ -25,4 +25,4 @@
 
 </html>
 
-<?php echo "<input type=\"button\" onclick=\"location.href='index.php'\" value=\"Log out\"/>"; ?>
+<?php echo "<input type=\"button\" onclick=\"location.href='index.php'\" value=\"Logout\"/>"; ?>
