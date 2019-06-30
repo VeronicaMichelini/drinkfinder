@@ -22,5 +22,5 @@
 	
 </form>
 <br><br>
-
+<button name="button">Log out</button>
 </html>
