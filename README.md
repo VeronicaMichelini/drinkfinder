@@ -10,12 +10,19 @@ All'interno della repository client si trovano i file : index.php , ListDrinkFou
 ## index.php
 Il file è scritto in php, contiene l'array degli utenti e i controlli per l'autenticazione. Le credenziali che permettono l'accesso e che sono inserite nell'array sono user1->u1, user2->u2, user3->u3. 
 ![Pagina login](logVuoto.png)
+
 Se viene inserito solo l'utente:
+
 ![Login username](logUsername.png)
+
 Se viene inserita solo la password:
+
 ![Login Password](logPassword.png)
+
 Se i dati di login inseriti non sono validi:
+
 ![Login invalido](logInvalido.png)
+
 Se il login è valido viene visualizzata la pagina iniziale di scelta.
 ## actionSelect.php
 Il file è scritto interamente in HTML ed è la pagina iniziale dove poter inserire il nome del cocktail da cercare oppure il nome dell'ingrediente. Nel primo caso verrà utilizzato il file ListDrinkFound.php e nel secondo caso il file ListIngredientFound.php.
