@@ -21,7 +21,7 @@ Se viene inserita solo la password:
 
 Se i dati di login inseriti non sono validi:
 
-![Login invalido](logInvalido.png)
+![Login invalido](LogInvalido.png)
 
 Se il login è valido viene visualizzata la pagina iniziale di scelta.
 ## actionSelect.php
