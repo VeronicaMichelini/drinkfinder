@@ -25,7 +25,7 @@ Se i dati di login inseriti non sono validi:
 
 Se il login è valido viene visualizzata la pagina iniziale di scelta.
 ## actionSelect.php
-Il file è scritto interamente in HTML ed è la pagina iniziale dove poter inserire il nome del cocktail da cercare oppure il nome dell'ingrediente. Nel primo caso verrà utilizzato il file ListDrinkFound.php e nel secondo caso il file ListIngredientFound.php.
+Il file è scritto interamente in HTML ed è la pagina iniziale dove poter inserire il nome del cocktail da cercare oppure il nome dell'ingrediente. Entrambi i dati vengono acquisiti attraverso il metodo GET. Nel primo caso verrà utilizzato il file ListDrinkFound.php e nel secondo caso il file ListIngredientFound.php.
 Se il nome inserito è composto da due o più parole, attraverso la funzione urlencode la stringa inserita viene trasformata in URL, cioè viene inserito il simbolo '+' tra le parole.
 ## ListDrinkFound.php 
 Il file è scritto in php; All'interno viene controllato se è stato inserito un nome nel campo apposito, per effettuare la ricerca tramite nome del drink; se il controllo va a buon fine il nome viene accodato all'url https://drinkfinder.herokuapp.com/ws/GetDrink.php?name= , il quale verrà usato come parametro per la funzione file_get_contents che restituirà tutti i drink con il nome indicato e le relative informazioni che mi interessa mostrare come risultato, in formato JSON.
@@ -67,9 +67,9 @@ Contiene poi la funzione get_drinks che ha come parametro il risultato completo 
 Quando si inserisce il nome nel campo del cocktail o dell'ingrediente e si esegue la ricerca, la richiesta alla API viene effettuata dalla funzioni getData che si trova all'interno del file getData.php, i rusultati vengono poi selezionati dalla funzione get_drinks che si trova all'interno del file getDrink.php e stampati da ListDrinkFound.php
 # Documentazione API
 * GetDrink.php : URL -> https://drinkfinder.herokuapp.com/ws/GetDrink.php?name=
-,acquisisce attraverso il metodo GET il nome che l'utente vuole cercare.
+, il nome che l'utente vuole cercare viene acquisito attraverso il metodo GET.
 * GetIngredient : URL -> https://drinkfinder.herokuapp.com/ws/GetIngredient.php?name=
-,acquisisce attraverso il metodo GET l'ingrediente che l'utente vuole cercare.
+, l'ingrediente che l'utente vuole cercare viene acquisito attraverso il metodo GET.
 Esempi:
 ### Caso primo: ricerca cocktail tramite nome (margarita)
 URL : https://drinkfinder.herokuapp.com/ws/GetDrink.php?name=margarita.
