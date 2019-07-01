@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 
 <body background = 'https://static.vecteezy.com/system/resources/previews/000/401/351/non_2x/vector-background-wallpaper-with-polygons-in-gradient-colors.jpg';

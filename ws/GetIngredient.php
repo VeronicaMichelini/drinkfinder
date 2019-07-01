@@ -1,3 +1,4 @@
+<!DOCTYPE php>
 <?php
 require ("GetData.php");
 header("Content-Type:application/json");
@@ -33,7 +34,7 @@ if(isset($_GET['name']))
 			deliver_response(204,"Assente",NULL);
 		}else
 		{	
-			// richiamo alla funzione get_info
+			// richiamo alla funzione get_drinks
 		$info = get_drinks($data);
 			// trovato : codice di stato -> 200
 			deliver_response(200,"Presente",$info);
@@ -71,7 +72,8 @@ function get_drinks($output)
 		else
 			// altrimenti gli assegno la stringa null
 			$info['ingredientImage'][$i] = "null";
-	}
+	}// end for
+	
 	// ritorno l'array info
 	return($info);		
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE php>
 <?php
 require ("GetData.php");
 header("Content-Type:application/json");
@@ -5,7 +6,6 @@ header("Content-Type:application/json");
 //dichiarazione ed inizializzazione variabili locali
 $output = "";
 
-// controllo se è stato inserito un nome nell'apposito spazio
 // acquisisco il nome con il metodo GET in modo da poterlo accodare all'url e visualizzarlo
 if(isset($_GET['name']))
 {
@@ -33,7 +33,7 @@ if(isset($_GET['name']))
 			deliver_response(204,"Assente",NULL);
 		}else
 		{	
-			// richiamo alla funzione get_info
+			// richiamo alla funzione get_drinks e gli passo i dati trovati
 			$info = get_drinks($data);
 			// trovato : codice di stato -> 200
 			deliver_response(200,"Presente",$info);
@@ -41,7 +41,7 @@ if(isset($_GET['name']))
     }else
     	// errore richiesta : codice di stato -> 400
     	deliver_response(400,"Rischiesta non valida",NULL);
-}
+}// end if
 
 // funzione per estrarre le informazioni. le informazioni che verranno visualizzate sono:
 // nome, immagine, categoria, caratteristiche, ricetta, ingredienti e dosi
@@ -179,7 +179,7 @@ function get_drinks($output)
 			// altrimenti gli assegno la stringa null
 			$info['drinkMeasure4'][$i] = "null";
 			
-	}
+	}// end ciclo for
 		// ritorno l'array info
 		return($info);		
 }
