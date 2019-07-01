@@ -42,18 +42,26 @@ Il file è scritto in php e contiene due funzioni :
 Il file è scritto in php; Accoda all'url https://www.thecocktaildb.com/api/json/v1/1/search.php?s= il nome del drink che l'utente vuole cercare, lo passa alla funzione getData spiegata sopra e controlla il risultato:
 - se la lista dei drink trovati è vuota, la funzione deliver_response viene richiamata con i parametri 204, assente e NULL.
 Schermata video:
+
 ![Not found name](notFoundName.png)
+
 - se nella lista dei drink trovati è presente almeno un cocktail, la funzione deliver_response viene richiamata con i parametri 200, presente e le info trovate.
 - se invece il campo nome è stato lasciato vuoto, la funzione deliver_response viene richiamata con i parametri 400, errore e NULL.
+
 ![Nome vuoto](nomeVuoto.png)
+
 Contiene poi la funzione get_drinks che ha come parametro il risultato completo della ricerca dei cocktail e restituisce solo una parte di tutte le informazioni.
 ## GetIngredient.php
 Il file è scritto in php; Accoda all'url https://www.thecocktaildb.com/api/json/v1/1/filter.php?i= il nome dell'ingrediente che l'utente vuole cercare, lo passa alla funzione getData e controlla il risultato:
 - se la lista dei drink trovati è vuota, la funzione deliver_response viene richiamata con i parametri 204, assente e NULL.
+
 ![Not found ingr](notFoundIngr.png)
+
 - se nella lista dei drink trovati è presente almeno un cocktail, la funzione deliver_response viene richiamata con i parametri 200, presente e le info trovate.
 - se invece il campo nome è stato lasciato vuoto, la funzione deliver_response viene richiamata con i parametri 400, errore e NULL.
+
 ![Not found name](ingrVuoto.png)
+
 Contiene poi la funzione get_drinks che ha come parametro il risultato completo della ricerca dei cocktail e restituisce solo una parte di tutte le informazioni.
 # Comunicazioni
 Quando si inserisce il nome nel campo del cocktail o dell'ingrediente e si esegue la ricerca, la richiesta alla API viene effettuata dalla funzioni getData che si trova all'interno del file getData.php, i rusultati vengono poi selezionati dalla funzione get_drinks che si trova all'interno del file getDrink.php e stampati da ListDrinkFound.php
@@ -75,10 +83,15 @@ Risultato:
 
 # Esempio : ricerca cocktail attraverso il nome 
 ![Index nome](ricDrink.png)
+
 ![Lista nome](drink1.png)
+
 ![Index nome2](ricDrink2.png)
+
 ![Lista nome2](drink2.png)
+
 # Esempio : ricerca cocktail attraverso l'ingrediente
 ![Index ingrediente](ricIngred.png)
+
 ![Lista ingrediente](ingred.png)
 
