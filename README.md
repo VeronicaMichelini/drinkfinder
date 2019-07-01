@@ -82,15 +82,23 @@ Risultato:
 {"status":200,"status_message":"Presente","data":{"ingredientName":["Adam Bomb","Adios Amigos Cocktail","Aztec Punch","Bahama Mama","Barracuda","Blue Hurricane","Espresso Rumtini","Hemingway Special","Jamaican Coffee","National Aquarium","Orange Whip","Radioactive Long Island Iced Tea","Rum Cooler","Rum Punch","Rum Toddy","Zippy's Revenge","Zombie"],"ingredientImage":["https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8nk2mp1504819893.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tyb4a41515793339.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/jwmr1x1504372337.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/nwx02s1515795822.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/acvf171561574403.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/jfcvps1504369888.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xqptps1441247257.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2hgwsb1504888674.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wyrsxu1441554538.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/athdk71504886286.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/1sqm7n1485620312.jpg","https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2en3jk1509557725.jpg"]}}
 
 # Esempio : ricerca cocktail attraverso il nome 
+
+https://drinkfinder.herokuapp.com/client/ListDrinkFound.php?name=spritz
+
 ![Index nome](ricDrink.png)
 
 ![Lista nome](drink1.png)
+
+https://drinkfinder.herokuapp.com/client/ListDrinkFound.php?name=americano
 
 ![Index nome2](ricDrink2.png)
 
 ![Lista nome2](drink2.png)
 
 # Esempio : ricerca cocktail attraverso l'ingrediente
+
+https://drinkfinder.herokuapp.com/client/ListIngredientFound.php?name=vodka
+
 ![Index ingrediente](ricIngred.png)
 
 ![Lista ingrediente](ingred.png)
