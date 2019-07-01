@@ -1,4 +1,3 @@
-<!DOCTYPE php>
 <?php
 require ("GetData.php");
 header("Content-Type:application/json");
@@ -6,18 +5,18 @@ header("Content-Type:application/json");
 //dichiarazione ed inizializzazione variabili locali
 $output = "";
 
-// controllo se è stato inserito un titolo nell'apposito spazio
+// controllo se Ã¨ stato inserito un titolo nell'apposito spazio
 // acquisisco il titolo con il metodo GET in modo da poterlo accodare all'url e visualizzarlo
 if(isset($_GET['name']))
 {
-	// assegno alla variabile name il nome dell'ingrediente che è stato inserito dall'utente 
+	// assegno alla variabile name il nome dell'ingrediente che Ã¨ stato inserito dall'utente 
 	$name = $_GET['name'];
 	
-	// se nome non è vuoto
+	// se nome non Ã¨ vuoto
 	if(!empty($name))
 	{
 		// trasformo la stringa inserita dall'utente in url
-    	// se il drink è composto da due nomi questi vengono uniti con il + nel mezzo
+    	// se il drink Ã¨ composto da due nomi questi vengono uniti con il + nel mezzo
 		$stringa_decodificata = urlencode($name);
 		
 		// accodo il nome dell'ingrediente inseriro all'url
@@ -26,7 +25,7 @@ if(isset($_GET['name']))
 		// richiamo la funzione getData
 		$data = getData($url);
 		
-		// se non è presente nessun drink
+		// se non Ã¨ presente nessun drink
 		if($data["drinks"] == null || 
 				count($data["drinks"]) == 0 )
 		{
@@ -57,7 +56,7 @@ function get_drinks($output)
 		 $i++)
 	{
 
-		// se strDrink di drinks[i] è presente	
+		// se strDrink di drinks[i] Ã¨ presente	
 		if(!empty($output["drinks"][$i]["strDrink"]))
 			// assegno il suo valore all'array ingredientName
 			$info['ingredientName'][$i] = $output["drinks"][$i]["strDrink"];
@@ -65,7 +64,7 @@ function get_drinks($output)
 			// altrimenti gli assegno la stringa null
 			$info['ingredientName'][$i] = "null";
 			
-			// se strDrinkThumb di drinks[i] è presente	
+			// se strDrinkThumb di drinks[i] Ã¨ presente	
 		if(!empty($output["drinks"][$i]["strDrinkThumb"]))
 			// assegno il suo valore all'array ingredientImage
 			$info['ingredientImage'][$i] = $output["drinks"][$i]["strDrinkThumb"];
