@@ -1,4 +1,3 @@
-<!DOCTYPE php>
 <?php
 // definizione e inizializzazione delle variabile locale
 $username = "";
